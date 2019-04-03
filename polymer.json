@@ -1,0 +1,26 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/polymer3-new-app/polymer3-new-app.js",
+  "basepath":"/",
+  "sources": [
+    "src/*/*.*"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "package.json",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [
+    {
+      "name": "es5Prod",
+      "preset": "es5-bundled"
+    }
+  ],
+  "modeResolution":"npm",
+  "npm": true,
+  "lint": {
+    "rules": [
+      "polymer-3"
+    ]
+  }
+}
